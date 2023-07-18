@@ -1,3 +1,4 @@
+import express from "express";
 import TelegramBot from "node-telegram-bot-api";
 import { config } from "dotenv";
 import typeOfInterest from "./keyboards/typeOfInterest.keyboard.js";
@@ -128,3 +129,29 @@ bot.on("location", async message => {
 bot.on("new_chat_members", (message) => {
     bot.sendMessage(message.chat.id, `Welcome ${message.from.first_name}`);
 });
+
+
+
+
+const app = express();
+app.use(express.json());
+
+app.get("/", (_, res) => {
+    const allOrders = read("orders.json");
+    res.status(200).json(allOrders);
+});
+
+app.post("/", (req, res) => {
+    const { course, phone_number, name, location } = req.body;
+    const allOrders = read("orders.json");
+    allOrders.push({
+        id: allOrders.at(-1)?.id + 1 || 1,
+        course,
+        phone_number,
+        name,
+        location
+    });
+    write("orders.json", allOrders);
+    res.status(201).send("Order has been created");
+});
+app.listen(3000, () => console.log("Server is running on port 3000"));

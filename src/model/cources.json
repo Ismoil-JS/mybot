@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Node JS",
+        "description": "Node JS is a server side javascript framework",
+        "price": 100,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "node.png"
+    },
+    {
+        "id": 2,
+        "name": "Angular JS",
+        "description": "Angular JS is a client side javascript framework",
+        "price": 200,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "angular.png"
+    },
+    {
+        "id": 3,
+        "name": "React JS",
+        "description": "React JS is a client side javascript framework",
+        "price": 300,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "react.png"
+    },
+    {
+        "id": 4,
+        "name": "Vue JS",
+        "description": "Vue JS is a client side javascript framework",
+        "price": 400,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "vue.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ember JS",
+        "description": "Ember JS is a client side javascript framework",
+        "price": 500,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "ember.png"
+    },
+    {
+        "id": 6,
+        "name": "Backbone JS",
+        "description": "Backbone JS is a client side javascript framework",
+        "price": 600,
+        "youTubeLink": "https://www.youtube.com/watch?v=2LUdnb-mls0",
+        "image": "backbone.jpg"
+    }
+]
